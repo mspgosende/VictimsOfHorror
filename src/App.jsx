@@ -1,6 +1,5 @@
-import { UserWidget } from "./Components/UserWidget/UserWidget";
-import { NavBar } from "./components/NavBar/NavBar";
-import { Cart } from "./Components/Cart/Cart";
+import { CartWidget } from "./Components/CartWidget/CartWidget";
+import { NavBar } from "./Components/NavBar/NavBar";
 import { ItemListContainer } from "./Components/ItemListContainer/ItemListContainer";
 
 function App() {
@@ -8,8 +7,6 @@ function App() {
   return (
     <>
     <NavBar/>
-    <UserWidget/>
-    <Cart/>
     <ItemListContainer greeting={'Welcome to Victims of Horror'}/>
     </>    
   )

@@ -1,6 +1,7 @@
+
 import { TbPigMoney } from "react-icons/tb";
 
-export const Cart = () => {
+export const CartWidget = () => {
     return (
       <div className="d-flex">
         <TbPigMoney color="black" size={33} />
