@@ -1,15 +1,15 @@
-import { CartWidget } from "./Components/CartWidget/CartWidget";
-import { NavBar } from "./Components/NavBar/NavBar";
-import { ItemListContainer } from "./Components/ItemListContainer/ItemListContainer";
+import { CharacterDetailContainer, CharacterListContainer, NavBar } from "./components";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
-
+export const App = () => {
   return (
-    <>
-    <NavBar/>
-    <ItemListContainer greeting={'Welcome to Victims of Horror'}/>
-    </>    
-  )
-}
-
-export default App
+    <BrowserRouter>
+      <NavBar/>
+      <Routes>
+        <Route path="/" element={<FilmListContainer /> } /> 
+        <Route path="/character/:status" element={<CharacterListContainer/> } /> 
+        <Route path="/character/:id" element={<CharacterDetailContainer /> } /> 
+      </Routes>
+    </BrowserRouter>  
+  );
+};
